@@ -2,11 +2,11 @@ import CheckoutDetail from 'Features/Checkout/CheckoutDetail';
 
 import { notFound } from 'next/navigation';
 
-interface PageProps {
+export default async function Page({
+  params,
+}: {
   params: { groupId: string };
-}
-
-export default async function Page({ params }: PageProps) {
+}) {
   const { groupId } = params;
 
   if (!groupId || groupId.trim() === '') {
