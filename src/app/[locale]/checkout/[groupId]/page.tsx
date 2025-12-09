@@ -5,13 +5,11 @@ import { notFound } from 'next/navigation';
 export default async function Page({
   params,
 }: {
-  params: { groupId: string };
+  params: { locale: string; groupId: string };
 }) {
   const { groupId } = params;
 
-  if (!groupId || groupId.trim() === '') {
-    notFound();
-  }
+  if (!groupId?.trim()) notFound();
 
   return (
     <div className='border-border border-b-[1px]'>
