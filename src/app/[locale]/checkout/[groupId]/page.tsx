@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 export default async function Page({
   params,
 }: {
-  params: { locale: string; groupId: string };
+  params: Awaited<{ locale: string; groupId: string }>;
 }) {
   const { groupId } = params;
 
