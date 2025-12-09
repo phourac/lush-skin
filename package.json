@@ -1,0 +1,49 @@
+{
+  "name": "lush-skin-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack -p 3000",
+    "prod": "npm run build && npm run start",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.9",
+    "@react-google-maps/api": "^2.20.7",
+    "ahooks": "^3.9.5",
+    "axios": "^1.12.2",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.22",
+    "iconsax-reactjs": "^0.0.8",
+    "iron-session": "^8.0.4",
+    "isomorphic-dompurify": "^2.33.0",
+    "jose": "^6.1.0",
+    "moment": "^2.30.1",
+    "next": "15.5.4",
+    "next-intl": "^4.3.9",
+    "nextjs-toploader": "^3.9.17",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-hook-form": "^7.64.0",
+    "react-icons": "^5.5.0",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-toastify": "^11.0.5",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.4",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

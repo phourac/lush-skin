@@ -1,0 +1,90 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Color System */
+  --color-primary: #fe7b5e;
+  --color-primary-light: #fff5f0;
+  --color-secondary: #ffffff;
+  --color-yellow: #fff88e;
+  --color-green: #d6f782;
+  --color-pink: #ffd2d3;
+  --color-pink-dark: #eb697d;
+  --color-purple: #4f58b5;
+  --color-paper: #f6f7f9;
+  --color-border: #dce0e5;
+  --color-divider: #edf0f2;
+  --color-grey-checkbox: #b6c1ca;
+  --color-grey-slide: #cbd3db;
+  --color-success: #00a81c;
+  --color-success-light: #dbffe1;
+  --color-error-light: #fff0f1;
+
+  /* --color-primary: #10b981;
+  --color-primary-dark: #059669;
+  --color-primary-light: #34d399; */
+
+  /* Text Colors */
+  --color-typography-primary: #0e121b;
+  --color-typography-dark: #1c1c1c;
+  --color-typography-secondary: #525e6f;
+  --color-typography-base: #14181f;
+  --color-typography-muted: #6f7c8e;
+  --color-typography-error: #df0c3d;
+
+  /* Fonts */
+  --font-poppins: var(--font-poppins);
+  --font-kantumruy-pro: var(--font-kantumruy-pro);
+
+  /* Register Tailwind font utilities */
+  --font-sans: var(--font-poppins), system-ui, sans-serif;
+  --font-poppins: var(--font-poppins), system-ui, sans-serif;
+  --font-kantumruy-pro: var(--font-kantumruy-pro), system-ui, sans-serif;
+}
+
+@theme inline {
+  /* --color-background: var(--background);
+  --color-foreground: var(--foreground); */
+  /* --font-sans: var(--font-geist-sans); */
+  --font-mono: var(--font-geist-mono);
+  --font-poppins: var(--font-poppins);
+  ---font-kantumruy-pro: var(--font-kantumruy-pro); /* ✅ consistent */
+}
+
+.snap-container {
+  scroll-behavior: smooth;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .no-scrollbar {
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+/* body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins), system-ui, sans-serif;
+} */
+
+/* html.locale-en body {
+  font-family: var(--font-poppins), system-ui, sans-serif;
+}
+
+html.locale-km body {
+  font-family: var(--font-kantumruy), system-ui, sans-serif;
+} */

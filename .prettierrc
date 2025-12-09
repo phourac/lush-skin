@@ -1,0 +1,29 @@
+{
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "tabWidth": 2,
+  "printWidth": 80,
+  "semi": true,
+  "trailingComma": "es5",
+  "plugins": [
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "importOrder": [
+    "next/(.*)$",
+    "^@headlessui/(.*)$|^react-icons/(.*)$",
+    "^react-icons/(.*)$",
+    "@repo/common/api/(.*)$",
+    "@/api/(.*)$",
+    "@repo/common/contexts/(.*)$",
+    "@/contexts/(.*)$",
+    "@repo/common/hooks/(.*)",
+    "@/database/(.*)$",
+    "@/components/(.*)$",
+    "@repo/common/utils/(.*)$",
+    "@/utils/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}
